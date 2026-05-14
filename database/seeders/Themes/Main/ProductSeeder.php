@@ -53,7 +53,6 @@ class ProductSeeder extends ThemeSeeder
                     ],
                 ]),
             ];
-        }, $this->getProducts()));
 
             // Add store_id only if Marketplace is available
             if ($storeIds && $storeIds->isNotEmpty()) {
@@ -61,6 +60,7 @@ class ProductSeeder extends ThemeSeeder
             }
 
             return $productData;
+        }, $this->getProducts()));
     }
 
     protected function getProducts(): array
