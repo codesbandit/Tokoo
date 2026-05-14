@@ -1,3 +1,4 @@
+{{--
 @php
     $manageLicense = auth()
         ->user()
@@ -52,3 +53,4 @@
         @endif
     </template>
 </v-license-form>
+--}}
