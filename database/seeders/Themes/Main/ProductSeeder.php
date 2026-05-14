@@ -3,7 +3,6 @@
 namespace Database\Seeders\Themes\Main;
 
 use Botble\Ecommerce\Database\Seeders\Traits\HasProductSeeder;
-use Botble\Marketplace\Models\Store;
 use Botble\Theme\Database\Seeders\ThemeSeeder;
 use Illuminate\Support\Facades\File;
 
@@ -24,15 +23,18 @@ class ProductSeeder extends ThemeSeeder
             ->map(fn ($item) => $this->filePath($item))
             ->all();
 
-        $storeIds = Store::query()->pluck('id');
+        // Check if Marketplace plugin is available
+        $storeIds = null;
+        if (class_exists('Botble\Marketplace\Models\Store')) {
+            $storeIds = \Botble\Marketplace\Models\Store::query()->pluck('id');
+        }
 
         $this->createProducts(array_map(function ($item) use ($fake, $images, $content, $storeIds) {
-            return [
+            $productData = [
                 'name' => $item,
                 'description' => $fake->randomElement($this->getDescriptions()),
                 'content' => $content,
                 'images' => $fake->randomElements($images, rand(3, 8)),
-                'store_id' => $fake->randomElement($storeIds),
                 'video_media' => $fake->randomElement([
                     [
                         [
@@ -52,6 +54,13 @@ class ProductSeeder extends ThemeSeeder
                 ]),
             ];
         }, $this->getProducts()));
+
+            // Add store_id only if Marketplace is available
+            if ($storeIds && $storeIds->isNotEmpty()) {
+                $productData['store_id'] = $fake->randomElement($storeIds->toArray());
+            }
+
+            return $productData;
     }
 
     protected function getProducts(): array
