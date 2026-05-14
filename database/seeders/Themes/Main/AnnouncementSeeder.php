@@ -31,9 +31,9 @@ class AnnouncementSeeder extends ThemeSeeder
     protected function getData(): array
     {
         return [
-            'Enjoy free shipping on all orders over $99! Shop now and save on delivery costs.',
-            'Need assistance? Our customer support is available 24/7 to help you with any questions or concerns.',
-            'Shop with confidence! We offer a hassle-free 30 days return service for your peace of mind.',
+            'Nikmati pengiriman gratis untuk semua pesanan di atas $99! Belanja sekarang dan hemat biaya pengiriman.',
+            'Butuh bantuan? Tim customer support kami siap membantu Anda 24/7 untuk segala pertanyaan dan kendala.',
+            'Belanja lebih tenang! Kami menyediakan layanan retur mudah hingga 30 hari untuk kenyamanan Anda.',
         ];
     }
 

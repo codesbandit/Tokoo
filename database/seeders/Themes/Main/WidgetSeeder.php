@@ -30,7 +30,7 @@ class WidgetSeeder extends ThemeSeeder
                     'id' => 'SiteInfoWidget',
                     'logo' => $this->filePath('general/logo.png', 'main'),
                     'logo_height' => 50,
-                    'about' => 'Shofy is a powerful tool eCommerce Laravel script for creating a professional and visually appealing online store.',
+                    'about' => 'Tokoo is a powerful tool eCommerce Laravel script for creating a professional and visually appealing online store.',
                     'show_social_links' => true,
                 ],
             ],
