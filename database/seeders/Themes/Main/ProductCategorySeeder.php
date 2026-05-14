@@ -28,70 +28,70 @@ class ProductCategorySeeder extends ThemeSeeder
     {
         return [
             [
-                'name' => 'New Arrivals',
+                'name' => 'Produk Terbaru',
                 'icon' => 'ti ti-home',
             ],
             [
-                'name' => 'Electronics',
+                'name' => 'Elektronik',
                 'icon' => 'ti ti-device-tv',
                 'children' => [
                     [
-                        'name' => 'Featured',
+                        'name' => 'Unggulan',
                         'image' => $this->filePath('product-categories/menu-1.jpg'),
                         'children' => [
-                            ['name' => 'New Arrivals'],
-                            ['name' => 'Best Sellers'],
+                            ['name' => 'Barang Baru'],
+                            ['name' => 'Terlaris'],
                             [
-                                'name' => 'Mobile Phone',
+                                'name' => 'Handphone',
                                 'image' => $this->filePath('product-categories/2.png'),
                                 'is_featured' => true,
                             ],
                         ],
                     ],
                     [
-                        'name' => 'Computers & Laptops',
+                        'name' => 'Komputer & Laptop',
                         'image' => $this->filePath('product-categories/menu-2.jpg'),
                         'is_featured' => true,
                         'children' => [
-                            ['name' => 'Top Brands'],
-                            ['name' => 'Weekly Best Selling'],
+                            ['name' => 'Brand Terbaik'],
+                            ['name' => 'Terlaris Minggu Ini'],
                             [
-                                'name' => 'CPU Heat Pipes',
+                                'name' => 'Pendingin CPU',
                                 'image' => $this->filePath('product-categories/3.png'),
                                 'is_featured' => true,
                             ],
                             [
-                                'name' => 'CPU Coolers',
+                                'name' => 'Kipas Processor',
                                 'image' => $this->filePath('product-categories/category-thumb-9.jpg'),
                             ],
                         ],
                     ],
                     [
-                        'name' => 'Accessories',
+                        'name' => 'Aksesoris',
                         'image' => $this->filePath('product-categories/menu-3.jpg'),
                         'children' => [
                             [
-                                'name' => 'Headphones',
+                                'name' => 'Headphone',
                                 'image' => $this->filePath('product-categories/1.png'),
                                 'is_featured' => true,
                             ],
                             [
-                                'name' => 'Wireless Headphones',
+                                'name' => 'Headphone Wireless',
                                 'image' => $this->filePath('product-categories/category-thumb-1.jpg'),
                             ],
                             [
-                                'name' => 'TWS Earphones',
+                                'name' => 'Earphone TWS',
                                 'image' => $this->filePath('product-categories/category-thumb-6.jpg'),
                             ],
                             [
-                                'name' => 'Smart Watch',
+                                'name' => 'Jam Tangan Pintar',
                                 'image' => $this->filePath('product-categories/4.png'),
                                 'is_featured' => true,
                             ],
                         ],
                     ],
                     [
-                        'name' => 'Gaming Console',
+                        'name' => 'Konsol Gaming',
                         'image' => $this->filePath('product-categories/category-thumb-8.jpg'),
                     ],
                     [
@@ -101,15 +101,15 @@ class ProductCategorySeeder extends ThemeSeeder
                 ],
             ],
             [
-                'name' => 'Gifts',
+                'name' => 'Hadiah',
                 'icon' => 'ti ti-gift',
             ],
             [
-                'name' => 'Computers',
+                'name' => 'Komputer',
                 'icon' => 'ti ti-device-laptop',
                 'children' => [
                     [
-                        'name' => 'Desktop',
+                        'name' => 'PC Desktop',
                         'icon' => 'ti ti-device-desktop',
                         'image' => $this->filePath('product-categories/category-thumb-5.jpg'),
                     ],
@@ -123,53 +123,52 @@ class ProductCategorySeeder extends ThemeSeeder
                         'icon' => 'ti ti-device-tablet',
                         'image' => $this->filePath('product-categories/category-thumb-4.jpg'),
                     ],
-                    ['name' => 'Accessories', 'icon' => 'ti ti-keyboard'],
+                    ['name' => 'Aksesoris', 'icon' => 'ti ti-keyboard'],
                 ],
             ],
             [
-                'name' => 'Smartphones & Tablets',
+                'name' => 'Smartphone & Tablet',
                 'image' => $this->filePath('product-categories/category-thumb-10.jpg'),
                 'icon' => 'ti ti-device-mobile',
             ],
             [
-                'name' => 'TV,
-                Video & Music',
+                'name' => 'TV, Video & Musik',
                 'icon' => 'ti ti-device-tv',
             ],
             [
-                'name' => 'Cameras',
+                'name' => 'Kamera',
                 'icon' => 'ti ti-camera',
             ],
             [
-                'name' => 'Cooking',
+                'name' => 'Peralatan Masak',
                 'icon' => 'ti ti-grill-spatula',
             ],
             [
-                'name' => 'Accessories',
+                'name' => 'Aksesoris',
                 'icon' => 'ti ti-building-store',
                 'children' => [
                     [
-                        'name' => 'With Bluetooth',
+                        'name' => 'Dengan Bluetooth',
                         'image' => $this->filePath('product-categories/5.png'),
                         'is_featured' => true,
                     ],
                 ],
             ],
             [
-                'name' => 'Sports',
+                'name' => 'Olahraga',
                 'icon' => 'ti ti-ball-football',
             ],
             [
-                'name' => 'Electronics Gadgets',
+                'name' => 'Gadget Elektronik',
                 'icon' => 'ti ti-cpu-2',
                 'children' => [
-                    ['name' => 'Micrscope'],
+                    ['name' => 'Mikroskop'],
                     ['name' => 'Remote Control'],
                     ['name' => 'Monitor'],
-                    ['name' => 'Thermometer'],
-                    ['name' => 'Backpack'],
+                    ['name' => 'Termometer'],
+                    ['name' => 'Tas Ransel'],
                     [
-                        'name' => 'Headphones',
+                        'name' => 'Headphone',
                         'image' => $this->filePath('product-categories/category-thumb-1.jpg'),
                     ],
                 ],

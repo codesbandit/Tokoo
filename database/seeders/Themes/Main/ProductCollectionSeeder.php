@@ -23,10 +23,10 @@ class ProductCollectionSeeder extends ThemeSeeder
     protected function getData(): array
     {
         return [
-            'Weekly Gadget Spotlight',
-            'Electronics Trendsetters',
-            'Digital Workspace Gear',
-            'Cutting-Edge Tech Showcase',
+            'Gadget Pilihan Minggu Ini',
+            'Elektronik Tren Terkini',
+            'Peralatan Kerja Digital',
+            'Teknologi Terdepan',
         ];
     }
 }

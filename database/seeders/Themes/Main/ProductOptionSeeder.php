@@ -15,22 +15,22 @@ class ProductOptionSeeder extends Seeder
     {
         $options = [
             [
-                'name' => 'Warranty',
+                'name' => 'Garansi',
                 'option_type' => RadioButton::class,
                 'required' => true,
                 'values' => [
                     [
-                        'option_value' => '1 Year',
+                        'option_value' => '1 Tahun',
                         'affect_price' => 0,
                         'affect_type' => 0,
                     ],
                     [
-                        'option_value' => '2 Year',
+                        'option_value' => '2 Tahun',
                         'affect_price' => 10,
                         'affect_type' => 0,
                     ],
                     [
-                        'option_value' => '3 Year',
+                        'option_value' => '3 Tahun',
                         'affect_price' => 20,
                         'affect_type' => 0,
                     ],
@@ -59,7 +59,7 @@ class ProductOptionSeeder extends Seeder
                 ],
             ],
             [
-                'name' => 'CPU',
+                'name' => 'Prosesor',
                 'option_type' => RadioButton::class,
                 'required' => true,
                 'values' => [
@@ -81,23 +81,28 @@ class ProductOptionSeeder extends Seeder
                 ],
             ],
             [
-                'name' => 'HDD',
+                'name' => 'Penyimpanan',
                 'option_type' => Dropdown::class,
                 'required' => false,
                 'values' => [
                     [
-                        'option_value' => '128GB',
+                        'option_value' => '128GB SSD',
                         'affect_price' => 0,
                         'affect_type' => 0,
                     ],
                     [
-                        'option_value' => '256GB',
+                        'option_value' => '256GB SSD',
                         'affect_price' => 10,
                         'affect_type' => 0,
                     ],
                     [
-                        'option_value' => '512GB',
+                        'option_value' => '512GB SSD',
                         'affect_price' => 20,
+                        'affect_type' => 0,
+                    ],
+                    [
+                        'option_value' => '1TB SSD',
+                        'affect_price' => 40,
                         'affect_type' => 0,
                     ],
                 ],

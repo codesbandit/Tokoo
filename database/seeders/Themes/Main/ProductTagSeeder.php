@@ -12,10 +12,10 @@ class ProductTagSeeder extends ThemeSeeder
     {
         $tags = [
             [
-                'name' => 'Electronic',
+                'name' => 'Elektronik',
             ],
             [
-                'name' => 'Mobile',
+                'name' => 'Handphone',
             ],
             [
                 'name' => 'Iphone',
@@ -24,10 +24,19 @@ class ProductTagSeeder extends ThemeSeeder
                 'name' => 'Printer',
             ],
             [
-                'name' => 'Office',
+                'name' => 'Kantor',
             ],
             [
                 'name' => 'IT',
+            ],
+            [
+                'name' => 'Gaming',
+            ],
+            [
+                'name' => 'Audio',
+            ],
+            [
+                'name' => 'Smart Home',
             ],
         ];
 
