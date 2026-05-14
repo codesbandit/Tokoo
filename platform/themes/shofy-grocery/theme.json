@@ -1,10 +1,10 @@
 {
     "id": "botble/shofy-grocery",
-    "name": "Shofy Grocery",
+    "name": "Tema Grocery",
     "namespace": "Theme\\ShofyGrocery\\",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "author": "Tokoo Technologies",
+    "url": "https://tokoo.com",
     "version": "1.0.9",
-    "description": "Shofy - eCommerce & Multivendor Marketplace Laravel Platform",
+    "description": "Tokoo Grocery - eCommerce & Multivendor Marketplace Laravel Platform",
     "required_plugins": ["ecommerce"]
 }
